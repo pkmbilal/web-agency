@@ -126,7 +126,7 @@ export default function ContactSection() {
                 <Mail className="h-5 w-5 text-primary" />
                 <div className="text-sm">
                   <div className="font-semibold">Email</div>
-                  <div className="text-muted-foreground">sales@zaeemlabs.com</div>
+                  <div className="text-muted-foreground">sales@zaeemstack.com</div>
                 </div>
               </div>
               <div className="flex items-center gap-3 rounded-2xl border bg-white/70 p-3">

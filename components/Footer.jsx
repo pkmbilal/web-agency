@@ -7,7 +7,7 @@ export default function Footer() {
         <Separator className="mb-8" />
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} SparkWeb. All rights reserved.
+            © {new Date().getFullYear()} codesudio All rights reserved.
           </div>
           <div className="text-sm text-muted-foreground">
             <a className="hover:text-foreground" href="#services">Services</a>
