@@ -10,14 +10,12 @@ import StatsCounter from "@/components/about/stats-counter";
 export default function AboutPage() {
   return (
     <main className="bg-background text-foreground">
-      <Navbar />
       <AboutHero />
       <StatsCounter />
       <AboutIntro />
       <AboutHighlights />
       <AboutProcess />
       <AboutCta />
-      <Footer />
     </main>
   );
 }
