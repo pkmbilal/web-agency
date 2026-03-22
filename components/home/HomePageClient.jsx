@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useThemeMode } from "../../lib/useThemeMode";
 import {
   aboutStats,
   faqs,
@@ -9,7 +10,6 @@ import {
   products,
   services,
 } from "../../lib/siteData";
-import { getTheme } from "../../lib/theme";
 import AboutSection from "./AboutSection";
 import ContactSection from "./ContactSection";
 import FaqSection from "./FaqSection";
@@ -32,8 +32,8 @@ const fadeUp = {
 
 export default function HomePageClient() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
   const [activeHeroSlide, setActiveHeroSlide] = useState(0);
+  const { darkMode, setDarkMode, theme, mounted } = useThemeMode();
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ export default function HomePageClient() {
     return () => window.clearInterval(interval);
   }, []);
 
-  const theme = getTheme(darkMode);
+  if (!mounted) return null;
 
   return (
     <div
@@ -68,39 +68,59 @@ export default function HomePageClient() {
         setActiveHeroSlide={setActiveHeroSlide}
         fadeUp={fadeUp}
       />
+
       <AboutSection
         darkMode={darkMode}
         theme={theme}
         aboutStats={aboutStats}
         fadeUp={fadeUp}
       />
+
       <PortfolioSection
         darkMode={darkMode}
         theme={theme}
         portfolioItems={portfolioItems}
         fadeUp={fadeUp}
       />
+
       <ServicesSection
         darkMode={darkMode}
         theme={theme}
         services={services}
         fadeUp={fadeUp}
       />
+
       <ProductsSection
         darkMode={darkMode}
         theme={theme}
         products={products}
         fadeUp={fadeUp}
       />
+
       <FaqSection
         darkMode={darkMode}
         theme={theme}
         faqs={faqs}
         fadeUp={fadeUp}
       />
-      <ContactSection darkMode={darkMode} theme={theme} fadeUp={fadeUp} />
-      <FooterSection darkMode={darkMode} theme={theme} fadeUp={fadeUp} />
-      <BackToTopButton darkMode={darkMode} theme={theme} scrollRef={scrollRef} />
+
+      <ContactSection
+        darkMode={darkMode}
+        theme={theme}
+        fadeUp={fadeUp}
+      />
+
+      <FooterSection
+        darkMode={darkMode}
+        theme={theme}
+        fadeUp={fadeUp}
+      />
+
+      <BackToTopButton
+        darkMode={darkMode}
+        theme={theme}
+        scrollRef={scrollRef}
+      />
     </div>
   );
 }

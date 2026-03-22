@@ -11,11 +11,9 @@ export default function SiteHeader({
 }) {
   return (
     <>
-      <header className="sticky top-0 z-50 w-full">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 sm:px-8 lg:px-12">
-          <div
-            className={`text-xl font-semibold uppercase tracking-[0.25em] ${theme.textPrimary}`}
-          >
+      <header className="fixed inset-x-0 top-0 z-50 w-full pointer-events-none">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 pointer-events-auto sm:px-8 lg:px-12">
+          <div className={`text-xl font-semibold uppercase tracking-[0.25em] ${theme.textPrimary}`}>
             Codesudio
           </div>
 
