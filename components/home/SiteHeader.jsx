@@ -4,7 +4,7 @@ import { Menu, Moon, Sun, X } from "lucide-react";
 export default function SiteHeader({ darkMode, menuOpen, setMenuOpen, setDarkMode, menuItems, theme }) {
   return (
     <>
-      <div className="sticky top-0 z-50 w-full pointer-events-none">
+      <header className="fixed inset-x-0 top-0 z-50 w-full pointer-events-none">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 pointer-events-auto sm:px-8 lg:px-12">
           <div className={`text-xl font-semibold uppercase tracking-[0.25em] ${theme.textPrimary}`}>
             Codesudio
@@ -31,7 +31,7 @@ export default function SiteHeader({ darkMode, menuOpen, setMenuOpen, setDarkMod
             </button>
           </div>
         </div>
-      </div>
+      </header>
 
       <AnimatePresence>
         {menuOpen && (
