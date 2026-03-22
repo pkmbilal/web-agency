@@ -34,7 +34,7 @@ export default function BackToTopButton({ theme, darkMode, scrollRef }) {
   type="button"
   aria-label="Back to top"
   onClick={scrollToTop}
-  className={`fixed bottom-20 right-20 z-[9999] flex h-16 w-16 items-center justify-center rounded-full border shadow-xl transition-all duration-300 ${
+  className={`hidden fixed bottom-20 right-20 z-[9999] sm:flex h-16 w-16 items-center justify-center rounded-full border shadow-xl transition-all duration-300 ${
     visible
       ? "translate-y-0 opacity-100"
       : "pointer-events-none translate-y-4 opacity-0"

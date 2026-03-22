@@ -2,7 +2,7 @@ export default function Section({ id, children, className = "", darkMode, fullBl
   return (
     <section
       id={id}
-      className={`relative min-h-screen snap-start overflow-hidden border-b ${
+      className={`relative min-h-screen md:snap-start overflow-hidden border-b ${
         darkMode ? "border-white/10" : "border-[#bfe8cc]"
       } ${className}`}
     >
