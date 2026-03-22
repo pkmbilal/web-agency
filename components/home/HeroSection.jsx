@@ -15,7 +15,7 @@ export default function HeroSection({
   return (
     <Section
       id="hero"
-      className={`${theme.heroBg} -mt-[88px]`}
+      className={`${theme.heroBg}`}
       darkMode={darkMode}
       fullBleed
     >
