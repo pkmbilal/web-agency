@@ -1,7 +1,14 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Moon, Sun, X } from "lucide-react";
 
-export default function SiteHeader({ darkMode, menuOpen, setMenuOpen, setDarkMode, menuItems, theme }) {
+export default function SiteHeader({
+  darkMode,
+  menuOpen,
+  setMenuOpen,
+  setDarkMode,
+  menuItems,
+  theme,
+}) {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50 w-full pointer-events-none">

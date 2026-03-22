@@ -13,7 +13,12 @@ export default function HeroSection({
   const currentHero = services[activeHeroSlide];
 
   return (
-    <Section id="hero" className={theme.heroBg} darkMode={darkMode} fullBleed>
+    <Section
+      id="hero"
+      className={`${theme.heroBg} -mt-[88px]`}
+      darkMode={darkMode}
+      fullBleed
+    >
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -46,23 +51,26 @@ export default function HeroSection({
             />
 
             <div className="relative z-10 flex min-h-screen w-full items-center">
-              <div className="mx-auto w-full max-w-7xl px-6 pb-28 pt-28 sm:px-8 lg:px-12 lg:pb-32 lg:pt-32">
+              <div className="mx-auto w-full max-w-7xl px-6 pb-28 pt-[calc(88px+2.5rem)] sm:px-8 lg:px-12 lg:pb-32 lg:pt-[calc(88px+3rem)]">
                 <div className="max-w-4xl">
                   <div
                     className={`mb-6 inline-flex rounded-full border px-4 py-2 text-xs font-medium uppercase tracking-[0.3em] sm:text-sm ${theme.heroCard} ${theme.textSoft}`}
                   >
                     Codesudio services
                   </div>
+
                   <div
                     className={`mb-6 text-sm font-medium uppercase tracking-[0.35em] ${theme.textSoft}`}
                   >
                     {currentHero.label}
                   </div>
+
                   <h1
                     className={`max-w-4xl text-4xl font-semibold leading-[0.94] tracking-tight sm:text-5xl md:text-6xl lg:text-[5.6rem] ${theme.textPrimary}`}
                   >
                     {currentHero.heading}
                   </h1>
+
                   <p className={`mt-7 max-w-2xl text-lg leading-8 sm:text-xl ${theme.textMuted}`}>
                     {currentHero.description}
                   </p>
@@ -74,6 +82,7 @@ export default function HeroSection({
                     >
                       View Work <ArrowRight className="h-4 w-4" />
                     </a>
+
                     <a
                       href="#contact"
                       className={`inline-flex items-center gap-2 rounded-full border px-7 py-4 text-base font-semibold transition ${theme.buttonGhost}`}
@@ -96,6 +105,7 @@ export default function HeroSection({
                       >
                         <ChevronLeft className="h-5 w-5" />
                       </button>
+
                       <button
                         type="button"
                         aria-label="Next slide"
