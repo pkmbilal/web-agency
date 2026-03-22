@@ -33,7 +33,9 @@ const fadeUp = {
 export default function HomePageClient() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeHeroSlide, setActiveHeroSlide] = useState(0);
-  const { darkMode, setDarkMode, theme } = useThemeMode();
+  const { darkMode, setDarkMode, theme, mounted } = useThemeMode();
+
+  if (!mounted) return null;
 
   const scrollRef = useRef(null);
 
