@@ -45,7 +45,7 @@ export default function AboutHighlights() {
           </p>
         </div>
 
-        <div className="grid gap-4 md:gap-6 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-3 md:gap-6">
           {highlights.map((item, index) => {
             const Icon = item.icon;
 
@@ -56,8 +56,8 @@ export default function AboutHighlights() {
               >
                 <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary/0 via-primary/70 to-primary/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-                <CardContent className="flex items-start gap-4 p-5 text-left sm:gap-5 sm:p-6 md:p-8">
-                  <div className="flex flex-col items-center gap-3 shrink-0">
+                <CardContent className="flex items-start gap-4 p-5 text-left sm:gap-5 sm:p-6 md:flex-col md:items-center md:justify-center md:p-8 md:text-center">
+                  <div className="flex shrink-0 flex-col items-center gap-3">
                     <div className="text-xs font-medium text-muted-foreground/70 sm:text-sm">
                       0{index + 1}
                     </div>
@@ -67,12 +67,12 @@ export default function AboutHighlights() {
                     </div>
                   </div>
 
-                  <div className="min-w-0 flex-1">
+                  <div className="min-w-0 flex-1 md:flex md:flex-col md:items-center">
                     <h3 className="text-lg font-semibold tracking-tight md:text-xl">
                       {item.title}
                     </h3>
 
-                    <p className="mt-2 text-sm leading-6 text-muted-foreground md:mt-4 md:text-[15px] md:leading-7">
+                    <p className="mt-2 text-sm leading-6 text-muted-foreground md:mt-4 md:max-w-xs md:text-[15px] md:leading-7">
                       {item.description}
                     </p>
 

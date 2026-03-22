@@ -129,35 +129,35 @@ export default function AboutIntro() {
         </div>
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">
-  {features.map((item) => {
-    const Icon = item.icon;
+          {features.map((item) => {
+            const Icon = item.icon;
 
-    return (
-      <Card
-        key={item.title}
-        className="group rounded-3xl border-2 border-border/60 bg-background/95 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-lg"
-      >
-        <CardContent className="flex items-start gap-5 p-8 text-left">
-          <div className="inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-primary/15 bg-primary/10 text-primary shadow-sm transition-transform duration-300 group-hover:scale-105">
-            <Icon className="h-7 w-7" />
-          </div>
+            return (
+              <Card
+                key={item.title}
+                className="group rounded-3xl border-2 border-border/60 bg-background/95 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-lg"
+              >
+                <CardContent className="flex items-start gap-5 p-8 text-left md:flex-col md:items-center md:text-center">
+                  <div className="inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-primary/15 bg-primary/10 text-primary shadow-sm transition-transform duration-300 group-hover:scale-105">
+                    <Icon className="h-7 w-7" />
+                  </div>
 
-          <div className="flex-1">
-            <h3 className="text-xl font-semibold tracking-tight">
-              {item.title}
-            </h3>
+                  <div className="flex-1 md:flex md:flex-col md:items-center">
+                    <h3 className="text-xl font-semibold tracking-tight">
+                      {item.title}
+                    </h3>
 
-            <p className="mt-3 text-sm leading-7 text-muted-foreground">
-              {item.description}
-            </p>
+                    <p className="mt-3 text-sm leading-7 text-muted-foreground md:max-w-xs">
+                      {item.description}
+                    </p>
 
-            <div className="mt-6 h-1 w-12 rounded-full bg-primary/20" />
-          </div>
-        </CardContent>
-      </Card>
-    );
-  })}
-</div>
+                    <div className="mt-6 h-1 w-12 rounded-full bg-primary/20" />
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

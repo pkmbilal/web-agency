@@ -1,22 +1,12 @@
-import Navbar from "@/components/Navbar";
-import HeroSlider from "@/components/HeroSlider";
-import ServicesSection from "@/components/ServicesSection";
-import FAQSection from "@/components/FAQSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
+import HomePageClient from "../components/home/HomePageClient";
+
+/** @type {import("next").Metadata} */
+export const metadata = {
+  title: "Codesudio | Web Development Agency",
+  description:
+    "Codesudio builds modern websites, web applications, and SaaS products for growing businesses.",
+};
 
 export default function Page() {
-  return (
-    <main className="min-h-screen">
-      <div className="bg-grid">
-        <Navbar />
-        <HeroSlider />
-      </div>
-
-      <ServicesSection />
-      <FAQSection />
-      <ContactSection />
-      <Footer />
-    </main>
-  );
+  return <HomePageClient />;
 }
