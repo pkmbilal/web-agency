@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Moon, Sun, X } from "lucide-react";
+import Link from "next/link";
 
 export default function SiteHeader({
   darkMode,
@@ -13,18 +14,28 @@ export default function SiteHeader({
     <>
       <header className="fixed inset-x-0 top-0 z-50 w-full pointer-events-none">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 pointer-events-auto sm:px-8 lg:px-12">
-          <div className={`text-xl font-semibold uppercase tracking-[0.25em] ${theme.textPrimary}`}>
-            Codesudio
-          </div>
+          <Link href="/">
+            <div
+              className={`text-xl font-semibold uppercase tracking-[0.25em] ${theme.textPrimary}`}
+            >
+              Codesudio
+            </div>
+          </Link>
 
           <div className="flex items-center gap-3">
             <button
               type="button"
-              aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+              aria-label={
+                darkMode ? "Switch to light mode" : "Switch to dark mode"
+              }
               onClick={() => setDarkMode((prev) => !prev)}
               className={`inline-flex items-center justify-center rounded-full border p-3 transition ${theme.topButton}`}
             >
-              {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              {darkMode ? (
+                <Sun className="h-5 w-5" />
+              ) : (
+                <Moon className="h-5 w-5" />
+              )}
             </button>
 
             <button
@@ -34,7 +45,11 @@ export default function SiteHeader({
               onClick={() => setMenuOpen((prev) => !prev)}
               className={`inline-flex items-center justify-center rounded-full border p-3 transition ${theme.topButton}`}
             >
-              {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {menuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>

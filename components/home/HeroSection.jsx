@@ -85,7 +85,7 @@ export default function HeroSection({
 
                     <a
                       href="#contact"
-                      className={`inline-flex items-center gap-2 rounded-full border px-7 py-4 text-base font-semibold transition ${theme.buttonGhost}`}
+                      className={`inline-flex items-center gap-2 rounded-full border border-[#16a34a] px-7 py-4 text-base font-semibold transition ${theme.buttonGhost}`}
                     >
                       Start a Project
                     </a>
