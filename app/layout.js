@@ -5,11 +5,11 @@ import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const siteUrl = "https://your-domain.com"; // <-- change
-const siteName = "SparkWeb"; // <-- change
-const siteTitle = "SparkWeb — Modern Websites, Landing Pages & Dashboards";
+const siteUrl = "https://codesudio.com"; // <-- change
+const siteName = "CodeSudio"; // <-- change
+const siteTitle = "CodeSudio | Web Development Agency";
 const siteDescription =
-  "We build modern, colorful websites, high-converting landing pages, and Next.js + Supabase dashboards. Fast performance and Core Web Vitals optimization included.";
+  "Codesudio builds modern websites, web applications, and SaaS products for growing businesses.";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
