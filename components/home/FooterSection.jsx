@@ -26,6 +26,7 @@ const contactItems = [
 
 const quickLinks = [
   { label: "Home", href: "/" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Services", href: "/services" },
   { label: "Products", href: "/products" },
   { label: "Contact", href: "#contact" },
