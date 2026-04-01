@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SiteHeader({
   darkMode,
@@ -15,11 +16,12 @@ export default function SiteHeader({
       <header className="fixed inset-x-0 top-0 z-50 w-full pointer-events-none">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 pointer-events-auto sm:px-8 lg:px-12">
           <Link href="/">
-            <div
-              className={`text-xl font-semibold uppercase tracking-[0.25em] ${theme.textPrimary}`}
-            >
-              Codesudio
-            </div>
+            <Image
+              src={darkMode ? "/logo-light.svg" : "/logo-dark.svg"}
+              alt="Codesudio Logo"
+              width={65}
+              height={65}
+            />
           </Link>
 
           <div className="flex items-center gap-3">

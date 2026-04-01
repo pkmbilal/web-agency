@@ -49,7 +49,7 @@ export default function ContactSection({ darkMode, theme, fadeUp }) {
           </div>
 
           <h2
-            className={`text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl ${theme.textPrimary}`}
+            className={`text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-5xl lg:text-7xl ${theme.textPrimary}`}
           >
             Let’s build a website your business can actually be proud of.
           </h2>
