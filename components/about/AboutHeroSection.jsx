@@ -36,16 +36,13 @@ export default function AboutHeroSection({ darkMode, theme, fadeUp }) {
           <h1
             className={`max-w-4xl text-4xl font-semibold leading-tight sm:text-5xl lg:text-7xl ${theme.textPrimary}`}
           >
-            We build modern digital experiences that help brands grow with
-            clarity.
+            Web Development Company in Jubail
           </h1>
 
           <p
             className={`mt-6 max-w-2xl text-base leading-8 sm:text-lg ${theme.textSecondary}`}
           >
-            Codesudio is a web agency focused on strategy, design, development,
-            and performance. We create high-converting websites and digital
-            products that look premium and work hard for your business.
+            Codesudio is a web development company in Jubail creating modern websites, web applications, and custom digital solutions for businesses that want to grow online.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">

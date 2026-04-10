@@ -53,7 +53,12 @@ export default function AboutSection({ darkMode, theme, aboutStats, fadeUp }) {
   const statsInView = useInView(statsRef, { once: true, amount: 0.35 });
 
   return (
-    <Section id="about" className={theme.sectionBg} darkMode={darkMode} fullBleed>
+    <Section
+      id="about"
+      className={theme.sectionBg}
+      darkMode={darkMode}
+      fullBleed
+    >
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -87,20 +92,24 @@ export default function AboutSection({ darkMode, theme, aboutStats, fadeUp }) {
         <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-6 py-20 sm:px-8 lg:px-12">
           <div className="grid w-full gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end lg:gap-12">
             <div className="max-w-4xl">
-              <div className={`mb-5 text-sm font-medium uppercase tracking-[0.35em] ${theme.textFaint}`}>
+              <div
+                className={`mb-5 text-sm font-medium uppercase tracking-[0.35em] ${theme.textFaint}`}
+              >
                 About
               </div>
 
-              <h2
+              <h1
                 className={`max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl ${theme.textPrimary}`}
               >
-                We build digital experiences that feel premium.
-              </h2>
+                Web Development Company in Dammam
+              </h1>
 
-              <p className={`mt-8 max-w-2xl text-lg leading-8 sm:text-xl ${theme.textMuted}`}>
-                Codesudio is a modern web agency focused on creating websites,
-                redesigns, and digital products that look sharp, load fast, and
-                help businesses grow with more confidence online.
+              <p
+                className={`mt-8 max-w-2xl text-lg leading-8 sm:text-xl ${theme.textMuted}`}
+              >
+                Codesudio is a web development company in Dammam building modern
+                websites, custom web applications, and digital solutions for
+                growing businesses in Saudi Arabia.
               </p>
             </div>
 
@@ -132,7 +141,9 @@ export default function AboutSection({ darkMode, theme, aboutStats, fadeUp }) {
                         />
                       </div>
 
-                      <div className={`mt-4 text-base leading-7 sm:text-lg ${theme.textMuted}`}>
+                      <div
+                        className={`mt-4 text-base leading-7 sm:text-lg ${theme.textMuted}`}
+                      >
                         {item.label}
                       </div>
                     </div>

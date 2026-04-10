@@ -43,7 +43,7 @@ export default function PortfolioHeroSection({ darkMode, theme, fadeUp }) {
             variants={fadeUp}
             className={`max-w-5xl text-4xl font-semibold leading-tight sm:text-5xl lg:text-7xl ${theme.textPrimary}`}
           >
-            Modern digital work built to make brands look premium.
+            Web Development Company in Khobar
           </motion.h1>
 
           <motion.p
@@ -54,9 +54,7 @@ export default function PortfolioHeroSection({ darkMode, theme, fadeUp }) {
             variants={fadeUp}
             className={`mt-6 max-w-2xl text-base leading-8 sm:text-lg ${theme.textSecondary}`}
           >
-            Explore selected projects, concept work, redesign directions, and
-            web experiences crafted with strategy, clean structure, and high-end
-            visual presentation.
+            Codesudio is a web development company in Khobar showcasing modern websites, redesign projects, and business-focused digital solutions for companies that want to grow online.
           </motion.p>
 
           <motion.div
