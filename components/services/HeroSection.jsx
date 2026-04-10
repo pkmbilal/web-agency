@@ -35,15 +35,13 @@ export default function HeroSection({ darkMode, theme, fadeUp }) {
           <h1
             className={`max-w-4xl text-4xl font-semibold leading-tight sm:text-5xl lg:text-7xl ${theme.textPrimary}`}
           >
-            Digital services built to help your business grow online.
+            Web Development Company in Riyadh
           </h1>
 
           <p
             className={`mt-6 max-w-2xl text-base leading-8 sm:text-lg ${theme.textSecondary}`}
           >
-            From fast static websites to custom dynamic web applications,
-            redesigns, and SEO optimisations, Codesudio creates modern digital
-            experiences that look strong and perform even better.
+            Codesudio helps businesses in Riyadh with professional website development, web design, custom web applications, and SEO-focused digital solutions built for performance, usability, and growth.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">

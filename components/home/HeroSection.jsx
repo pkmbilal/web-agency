@@ -65,11 +65,11 @@ export default function HeroSection({
                     {currentHero.label}
                   </div>
 
-                  <h1
+                  <h2
                     className={`max-w-4xl text-4xl font-semibold leading-[0.94] tracking-tight sm:text-5xl md:text-6xl lg:text-[5.6rem] ${theme.textPrimary}`}
                   >
                     {currentHero.heading}
-                  </h1>
+                  </h2>
 
                   <p className={`mt-7 max-w-2xl text-lg leading-8 sm:text-xl ${theme.textMuted}`}>
                     {currentHero.description}

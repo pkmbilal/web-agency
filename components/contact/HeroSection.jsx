@@ -37,14 +37,13 @@ export default function HeroSection({ darkMode, theme, fadeUp }) {
           <h1
             className={`max-w-4xl text-4xl font-semibold leading-tight sm:text-5xl lg:text-7xl ${theme.textPrimary}`}
           >
-            Let’s discuss your next website or web application.
+            Web Development Company in Saudi Arabia
           </h1>
 
           <p
             className={`mt-6 max-w-2xl text-base leading-8 sm:text-lg ${theme.textSecondary}`}
           >
-            Share your requirements, business goals, or ideas. We will review
-            your inquiry and get back to you with the right next steps.
+            Codesudio is a web development company in Saudi Arabia helping businesses with modern websites, web applications, redesigns, and custom digital solutions built for growth.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">

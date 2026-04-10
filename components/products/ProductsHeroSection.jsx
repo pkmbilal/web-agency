@@ -36,16 +36,13 @@ export default function ProductsHeroSection({ darkMode, theme, fadeUp }) {
           <h1
             className={`max-w-4xl text-4xl font-semibold leading-tight sm:text-5xl lg:text-7xl ${theme.textPrimary}`}
           >
-            Digital products designed to help brands launch faster and grow
-            smarter.
+            Web Development Company in Jeddah
           </h1>
 
           <p
             className={`mt-6 max-w-2xl text-base leading-8 sm:text-lg ${theme.textSecondary}`}
           >
-            We create product-focused websites, conversion-driven landing pages,
-            scalable web solutions, and polished digital experiences built for
-            real business growth.
+            Codesudio is a web development company in Jeddah providing websites, landing pages, web applications, and custom digital solutions for businesses that want to grow online.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
