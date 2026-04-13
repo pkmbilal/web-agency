@@ -2,7 +2,7 @@ import ContactPageClient from "../../components/contact/ContactPageClient";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
-  metadataBase: new URL("https://codesudio.com"),
+  metadataBase: new URL("https://www.codesudio.com"),
   title: "Web Development Company in Saudi Arabia | Codesudio",
   description:
     "Codesudio is a web development company in Saudi Arabia helping businesses with modern websites, web applications, redesigns, and custom digital solutions.",
@@ -22,7 +22,7 @@ export const metadata = {
     title: "Web Development Company in Saudi Arabia | Codesudio",
     description:
       "Codesudio is a web development company in Saudi Arabia helping businesses with modern websites, web applications, redesigns, and custom digital solutions.",
-    url: "https://codesudio.com/contact",
+    url: "https://www.codesudio.com/contact",
     siteName: "Codesudio",
     images: [
       {

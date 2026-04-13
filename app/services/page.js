@@ -2,7 +2,7 @@ import ServicesPageClient from "../../components/services/ServicesPageClient";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
-  metadataBase: new URL("https://codesudio.com"),
+  metadataBase: new URL("https://www.codesudio.com"),
   title: "Web Development Company in Riyadh | Codesudio",
   description:
     "Codesudio is a web development company in Riyadh offering modern websites, dynamic web applications, website redesign, and SEO-focused digital solutions for businesses in Saudi Arabia.",
@@ -22,7 +22,7 @@ export const metadata = {
     title: "Web Development Company in Riyadh | Codesudio",
     description:
       "Codesudio is a web development company in Riyadh offering modern websites, dynamic web applications, website redesign, and SEO-focused digital solutions for businesses in Saudi Arabia.",
-    url: "https://codesudio.com/services",
+    url: "https://www.codesudio.com/services",
     siteName: "Codesudio",
     images: [
       {

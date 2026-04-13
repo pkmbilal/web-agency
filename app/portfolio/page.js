@@ -2,7 +2,7 @@ import PortfolioPageClient from "@/components/portfolio/PortfolioPageClient";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
-  metadataBase: new URL("https://codesudio.com"),
+  metadataBase: new URL("https://www.codesudio.com"),
   title: "Web Development Company in Khobar | Codesudio",
   description:
     "Codesudio is a web development company in Khobar showcasing modern websites, redesign projects, and business-focused digital solutions for companies in Saudi Arabia.",
@@ -22,7 +22,7 @@ export const metadata = {
     title: "Web Development Company in Khobar | Codesudio",
     description:
       "Codesudio is a web development company in Khobar showcasing modern websites, redesign projects, and business-focused digital solutions for companies in Saudi Arabia.",
-    url: "https://codesudio.com/portfolio",
+    url: "https://www.codesudio.com/portfolio",
     siteName: "Codesudio",
     images: [
       {
