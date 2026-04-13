@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://codesudio.com/</loc>
-  </url>
-  <url>
-    <loc>https://codesudio.com/about</loc>
-  </url>
-  <url>
-    <loc>https://codesudio.com/services</loc>
-  </url>
-  <url>
-    <loc>https://codesudio.com/products</loc>
-  </url>
-  <url>
-    <loc>https://codesudio.com/portfolio</loc>
-  </url>
-  <url>
-    <loc>https://codesudio.com/contact</loc>
-  </url>
-  <url>
-    <loc>https://codesudio.com/blog</loc>
-  </url>
+  <url><loc>https://www.codesudio.com/</loc></url>
+  <url><loc>https://www.codesudio.com/about</loc></url>
+  <url><loc>https://www.codesudio.com/services</loc></url>
+  <url><loc>https://www.codesudio.com/products</loc></url>
+  <url><loc>https://www.codesudio.com/portfolio</loc></url>
+  <url><loc>https://www.codesudio.com/contact</loc></url>
+  <url><loc>https://www.codesudio.com/blog</loc></url>
 </urlset>
