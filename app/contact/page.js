@@ -26,7 +26,7 @@ export const metadata = {
     siteName: "Codesudio",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo-dark.svg",
         width: 1200,
         height: 630,
         alt: "Web Development Company in Saudi Arabia - Codesudio",
@@ -40,7 +40,7 @@ export const metadata = {
     title: "Web Development Company in Saudi Arabia | Codesudio",
     description:
       "Codesudio is a web development company in Saudi Arabia helping businesses with modern websites, web applications, redesigns, and custom digital solutions.",
-    images: ["/og-image.jpg"],
+    images: ["/logo-dark.svg"],
   },
   robots: {
     index: true,
