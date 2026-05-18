@@ -33,7 +33,7 @@ const fadeUp = {
 export default function HomePageClient() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeHeroSlide, setActiveHeroSlide] = useState(0);
-  const { darkMode, setDarkMode, theme, mounted } = useThemeMode();
+  const { darkMode, setDarkMode, theme } = useThemeMode();
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -43,8 +43,6 @@ export default function HomePageClient() {
 
     return () => window.clearInterval(interval);
   }, []);
-
-  if (!mounted) return null;
 
   return (
     <div

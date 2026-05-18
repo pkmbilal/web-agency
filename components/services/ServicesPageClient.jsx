@@ -31,12 +31,10 @@ const fadeUp = {
 };
 
 export default function ServicesPageClient() {
-  const { darkMode, setDarkMode, mounted } = useThemeMode();
+  const { darkMode, setDarkMode } = useThemeMode();
   const [menuOpen, setMenuOpen] = useState(false);
   const scrollRef = useRef(null);
   const theme = getTheme(darkMode);
-
-  if (!mounted) return null;
 
   return (
     <div

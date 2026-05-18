@@ -25,7 +25,7 @@ const fadeUp = {
 };
 
 export default function AboutPageClient() {
-  const { darkMode, setDarkMode, mounted } = useThemeMode();
+  const { darkMode, setDarkMode } = useThemeMode();
   const [menuOpen, setMenuOpen] = useState(false);
   const scrollRef = useRef(null);
 
@@ -41,8 +41,6 @@ export default function AboutPageClient() {
 
     document.body.style.overflow = "";
   }, [menuOpen]);
-
-  if (!mounted) return null;
 
   return (
     <div

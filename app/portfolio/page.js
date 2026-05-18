@@ -26,7 +26,7 @@ export const metadata = {
     siteName: "Codesudio",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo-dark.svg",
         width: 1200,
         height: 630,
         alt: "Web Development Company in Khobar - Codesudio",
@@ -40,7 +40,7 @@ export const metadata = {
     title: "Web Development Company in Khobar | Codesudio",
     description:
       "Codesudio is a web development company in Khobar showcasing modern websites, redesign projects, and business-focused digital solutions for companies in Saudi Arabia.",
-    images: ["/og-image.jpg"],
+    images: ["/logo-dark.svg"],
   },
   robots: {
     index: true,

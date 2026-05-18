@@ -2,7 +2,7 @@ import HomePageClient from "../components/home/HomePageClient";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
-  metadataBase: new URL("https://codesudio.com"),
+  metadataBase: new URL("https://www.codesudio.com"),
   title: "Web Development Company in Dammam | Codesudio",
   description:
     "Codesudio is a web development company in Dammam building modern websites, web applications, and custom digital solutions for businesses in Saudi Arabia.",
@@ -22,11 +22,11 @@ export const metadata = {
     title: "Web Development Company in Dammam | Codesudio",
     description:
       "Codesudio is a web development company in Dammam building modern websites, web applications, and custom digital solutions for businesses in Saudi Arabia.",
-    url: "https://codesudio.com",
+    url: "https://www.codesudio.com",
     siteName: "Codesudio",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo-dark.svg",
         width: 1200,
         height: 630,
         alt: "Web Development Company in Dammam - Codesudio",
@@ -40,7 +40,7 @@ export const metadata = {
     title: "Web Development Company in Dammam | Codesudio",
     description:
       "Codesudio is a web development company in Dammam building modern websites, web applications, and custom digital solutions for businesses in Saudi Arabia.",
-    images: ["/og-image.jpg"],
+    images: ["/logo-dark.svg"],
   },
   robots: {
     index: true,
